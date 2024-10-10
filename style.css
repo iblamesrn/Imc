@@ -1,0 +1,50 @@
+.user_card{
+    width: 550px;
+    height: 350px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    row-gap: 3px;
+    border-radius: 20px;
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    margin-left: 52em;
+    margin-top: 40em;
+}
+
+#Peso{
+    width: 250px;
+    margin-left: 8.5em;
+
+}
+
+.label {
+    margin-left: 8.5em;
+}
+
+#Nome{
+    width: 250px;
+    margin-left: 8.5em;
+}
+
+#Altura{
+    width: 250px;
+    margin-left: 8.5em;
+}
+
+button{
+    width: 250px;
+    margin-left: 8.5em;
+    gap: 4px;
+}
