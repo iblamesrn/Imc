@@ -34,50 +34,12 @@ label {
 input {
     width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.radio-group {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-.radio-group label {
-    margin: 0 10px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2e8b57;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: #238b45;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-p {
-    color: #2e8b57;
-    font-size: 18px;
-}
+    border: 1px so
 
 
 
 
+        
 .modal {
     display: none;
     position: fixed;
