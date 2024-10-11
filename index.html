@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculo IMC</title>
+    <title>Cálculo IMC</title>
 </head>
 <body>
 
-    <h1>Bem Vindo ao site de calculo IMC ( Índice de Massa Corporal)</h1>
+    <div class="container">
+        <h1>Bem-vindo ao Cálculo IMC</h1>
 
-    <div class="user_card">
+        <div class="user_card">
+            <h2>Preencha os campos abaixo</h2>
 
-        <h2 >Preencha as caixa de perguntas abaixo para saber seu IMC</h2>
+            <label for="Nome">Digite seu nome</label>
+            <input id="Nome" type="text" placeholder="Seu Nome">
 
-        <label class="label">Digite seu nome</label>
-        <input id="Nome" type="text" placeholder="Seu Nome">
+            <label>Informe seu sexo biológico:</label>
+            <div class="radio-group">
+                <label><input id="sexoMasculino" type="radio" name="sexo"> Masculino</label>
+                <label><input id="sexoFeminino" type="radio" name="sexo"> Feminino</label>
+            </div>
 
-        <label class="label">Informe seu sexo biológico:
-            <br>
-        <input id="sexoMasculino" type="radio" >Masculino
-        <input type="radio" id="sexoFeminino">Feminino
-        </label>
-        
+            <label for="Peso">Informe seu peso em Kg</label>
+            <input id="Peso" type="number" placeholder="Ex: 70">
 
+            <label for="Altura">Informe sua altura em metros</label>
+            <input id="Altura" type="number" step="0.01" placeholder="Ex: 1.70">
 
-        
-        <label class="label">Informe seu peso em Kg</label>
-        <input id="Peso" type="text" placeholder="EX:70Kg">
+            <button id="Calcular" onclick="calcularIMC()">Calcular IMC</button>
 
-        <label class="label">Informe sua altura</label>
-        <input id="Altura" type="text" placeholder="EX:1,70">
+            <button class="contact"><a href="faleConosco.html">Fale Conosco</a></button>
+        </div>
 
-        <button id="Calcular" onclick="IMC()"> >Calcular IMC</button>
-
-        <button><a href="faleConosco.html">fale Conosco</a></button>
-
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <h2>Seu IMC é:</h2>
+                <p id="resultadoIMC"></p>
+            </div>
+        </div>
     </div>
 
-    
-    <p id="imcH"></p>
-
-    <p id="imcF"></p>
-
     <script src="app.js"></script>
-    
 </body>
+</html>
+
 </html>
