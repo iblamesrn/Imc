@@ -1,76 +1,53 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
+.user_card{
+    width: 550px;
+    height: 350px;
+    background-color: bisque;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    row-gap: 3px;
+    border-radius: 20px;
+   
 }
 
-.container {
-    text-align: center;
-}
-
-.user_card {
-    background-color: #ffebcd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
-}
-
-h1 {
-    color: #2e8b57;
-}
-
-label {
-    margin: 10px 0 5px;
-    display: block;
-    font-weight: bold;
-}
-
-input {
-    width: calc(100% - 20px);
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.radio-group {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-.radio-group label {
-    margin: 0 10px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2e8b57;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: #238b45;
-}
-
-a {
+a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
-p {
+p{
+    margin-left: 52em;
+    margin-top: 40em;
+}
+
+#Peso{
+    width: 250px;
+    margin-left: 8.5em;
+
+}
+
+.label {
+    margin-left: 8.5em;
+}
+
+#Nome{
+    width: 250px;
+    margin-left: 8.5em;
+}
+
+#Altura{
+    width: 250px;
+    margin-left: 8.5em;
+}
+
+button{
+    width: 250px;
+    margin-left: 8.5em;
+    gap: 4px;
+}
     color: #2e8b57;
     font-size: 18px;
 }
